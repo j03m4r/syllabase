@@ -10,5 +10,6 @@ html,
 body,
 :root {
   height: 100%;
+  background-color: rgb(249, 90, 255);
   color-scheme: light;
 }
