@@ -1,0 +1,1130 @@
+[
+    {
+        "id": 1,
+        "full_class_title": "CSCI 2021 - Introduction to Computer Systems",
+        "class_description": "This course explores computer systems and their components, including hardware and software mechanisms, data representation, boolean algebra, machine-level programs, instruction set architecture, processor organization, memory hierarchy, virtual memory, compiling, linking, and programming in C.",
+        "course": {
+            "id": 1,
+            "course_type": "CSCI",
+            "course_number": 2021,
+            "prerequisites": [
+                {
+                    "id": 2,
+                    "course_type": "CSCI",
+                    "course_number": 1913,
+                    "prerequisites": [
+                        {
+                            "id": 3,
+                            "course_type": "CSCI",
+                            "course_number": "1933",
+                            "prerequisites": []
+                        }
+                    ]
+                }
+            ]
+        },
+        "required_materials": [
+            {
+                "id": 1,
+                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+            }
+        ],
+        "policies": [
+            {
+                "id": 1,
+                "title": "Academic Integrity",
+                "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
+            }
+        ],
+        "grades": {
+            "id": 1,
+            "grade_lines": [
+                {
+                    "id": 1,
+                    "grade_name": "A",
+                    "upper_precentage": 100,
+                    "lower_precentage": 93
+                },
+                {
+                    "id": 2,
+                    "grade_name": "A-",
+                    "upper_precentage": 92,
+                    "lower_precentage": 90
+                },
+                {
+                    "id": 3,
+                    "grade_name": "B+",
+                    "upper_precentage": 89,
+                    "lower_precentage": 87
+                },
+                {
+                    "id": 4,
+                    "grade_name": "B",
+                    "upper_precentage": 87,
+                    "lower_precentage": 83
+                },
+                {
+                    "id": 5,
+                    "grade_name": "B-",
+                    "upper_precentage": 82,
+                    "lower_precentage": 80
+                },
+                {
+                    "id": 6,
+                    "grade_name": "C+",
+                    "upper_precentage": 79,
+                    "lower_precentage": 77
+                },
+                {
+                    "id": 7,
+                    "grade_name": "C",
+                    "upper_precentage": 76,
+                    "lower_precentage": 73
+                },
+                {
+                    "id": 8,
+                    "grade_name": "C-",
+                    "upper_precentage": 72,
+                    "lower_precentage": 70
+                },
+                {
+                    "id": 9,
+                    "grade_name": "D+",
+                    "upper_precentage": 69,
+                    "lower_precentage": 67
+                },
+                {
+                    "id": 10,
+                    "grade_name": "D",
+                    "upper_precentage": 66,
+                    "lower_precentage": 63
+                },
+                {
+                    "id": 11,
+                    "grade_name": "D-",
+                    "upper_precentage": 62,
+                    "lower_precentage": 60
+                },
+                {
+                    "id": 12,
+                    "grade_name": "F",
+                    "upper_precentage": 59,
+                    "lower_precentage": 0
+                }
+            ],
+            "grade_categories": [
+                {
+                    "id": 1,
+                    "title": "Weekly Homework Quizzes",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 2,
+                    "title": "Laboratory Assignments",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 3,
+                    "title": "Course Projects",
+                    "grade_precentage": "35%"
+                },
+                {
+                    "id": 4,
+                    "title": "Midterm Exam 1",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 5,
+                    "title": "Midterm Exam 2",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 6,
+                    "title": "Final Exam (Cumulative)",
+                    "grade_precentage": "15%"
+                },
+                {
+                    "id": 7,
+                    "title": "Participation",
+                    "grade_precentage": "5%"
+                }
+            ],
+            "lecture_exists": true,
+            "labs_exist": true,
+            "discussion_exists": false
+        },
+        "schedule": {
+            "office_hours": [],
+            "key_dates": [
+                {
+                    "id": 1,
+                    "title": "First lecture",
+                    "date": "2023-09-06T00:00:00+0500"
+                },
+                {
+                    "id": 2,
+                    "title": "Midtern Exam 1",
+                    "date": "2023-10-06T00:00:00+0500"
+                },
+                {
+                    "id": 3,
+                    "title": "Midterm Exam 2",
+                    "date": "2023-11-10T00:00:00+0500"
+                },
+                {
+                    "id": 4,
+                    "title": "Final exam (section 001)",
+                    "date": "2023-12-18T00:00:00+0500"
+                },
+                {
+                    "id": 5,
+                    "title": "Final exam (section 010)",
+                    "date": "2023-12-19T00:00:00+0500"
+                },
+                {
+                    "id": 6,
+                    "title": "Final exam (section 020)",
+                    "date": "2023-12-21T00:00:00+0500"
+                }
+            ]
+        },
+        "staff": [
+            {
+                "id": 1,
+                "name": "Jack Kolb",
+                "role": "Professor",
+                "email": "jhkolb@umn.edu"
+            },
+            {
+                "id": 2,
+                "name": "Lucas Olsen",
+                "email": "olse0280@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 3,
+                "name": "Lukas Karel",
+                "email": "karel084@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 4,
+                "name": "Lydia Alem",
+                "email": "alem0046@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 5,
+                "name": "Michael Angara",
+                "email": "angar016@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 6,
+                "name": "Muqing Liu",
+                "email": "liu01693@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 7,
+                "name": "Mya Yoder",
+                "email": "yoder098@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 8,
+                "name": "Nicholas Soto",
+                "email": "soto0056@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 9,
+                "name": "Noah Hendrickson",
+                "email": "hend0800@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 10,
+                "name": "Omar Elgohary",
+                "email": "elgoh003@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 11,
+                "name": "Rayan Amir",
+                "email": "amir0045@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 12,
+                "name": "Sohan Addagudi",
+                "email": "addag009@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 13,
+                "name": "Thomas Starks",
+                "email": "stark792@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 14,
+                "name": "Yeow Shaun Loo",
+                "email": "loo00013@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 15,
+                "name": "Yixun Wei",
+                "email": "wei00161@umn.edu",
+                "role": "GTA"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "full_class_title": "CSCI 2041",
+        "class_description": "This course explores computer systems and their components, including hardware and software mechanisms, data representation, boolean algebra, machine-level programs, instruction set architecture, processor organization, memory hierarchy, virtual memory, compiling, linking, and programming in C.",
+        "course": {
+            "id": 2,
+            "course_type": "CSCI",
+            "course_number": 2041,
+            "prerequisites": [
+                {
+                    "id": 2,
+                    "course_type": "CSCI",
+                    "course_number": 1913,
+                    "prerequisites": [
+                        {
+                            "id": 3,
+                            "course_type": "CSCI",
+                            "course_number": "1933",
+                            "prerequisites": []
+                        }
+                    ]
+                }
+            ]
+        },
+        "required_materials": [
+            {
+                "id": 1,
+                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+            }
+        ],
+        "policies": [
+            {
+                "id": 1,
+                "title": "Academic Integrity",
+                "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
+            }
+        ],
+        "grades": {
+            "id": 1,
+            "grade_lines": [
+                {
+                    "id": 1,
+                    "grade_name": "A",
+                    "upper_precentage": 100,
+                    "lower_precentage": 93
+                },
+                {
+                    "id": 2,
+                    "grade_name": "A-",
+                    "upper_precentage": 92,
+                    "lower_precentage": 90
+                },
+                {
+                    "id": 3,
+                    "grade_name": "B+",
+                    "upper_precentage": 89,
+                    "lower_precentage": 87
+                },
+                {
+                    "id": 4,
+                    "grade_name": "B",
+                    "upper_precentage": 87,
+                    "lower_precentage": 83
+                },
+                {
+                    "id": 5,
+                    "grade_name": "B-",
+                    "upper_precentage": 82,
+                    "lower_precentage": 80
+                },
+                {
+                    "id": 6,
+                    "grade_name": "C+",
+                    "upper_precentage": 79,
+                    "lower_precentage": 77
+                },
+                {
+                    "id": 7,
+                    "grade_name": "C",
+                    "upper_precentage": 76,
+                    "lower_precentage": 73
+                },
+                {
+                    "id": 8,
+                    "grade_name": "C-",
+                    "upper_precentage": 72,
+                    "lower_precentage": 70
+                },
+                {
+                    "id": 9,
+                    "grade_name": "D+",
+                    "upper_precentage": 69,
+                    "lower_precentage": 67
+                },
+                {
+                    "id": 10,
+                    "grade_name": "D",
+                    "upper_precentage": 66,
+                    "lower_precentage": 63
+                },
+                {
+                    "id": 11,
+                    "grade_name": "D-",
+                    "upper_precentage": 62,
+                    "lower_precentage": 60
+                },
+                {
+                    "id": 12,
+                    "grade_name": "F",
+                    "upper_precentage": 59,
+                    "lower_precentage": 0
+                }
+            ],
+            "grade_categories": [
+                {
+                    "id": 1,
+                    "title": "Weekly Homework Quizzes",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 2,
+                    "title": "Laboratory Assignments",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 3,
+                    "title": "Course Projects",
+                    "grade_precentage": "35%"
+                },
+                {
+                    "id": 4,
+                    "title": "Midterm Exam 1",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 5,
+                    "title": "Midterm Exam 2",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 6,
+                    "title": "Final Exam (Cumulative)",
+                    "grade_precentage": "15%"
+                },
+                {
+                    "id": 7,
+                    "title": "Participation",
+                    "grade_precentage": "5%"
+                }
+            ],
+            "lecture_exists": true,
+            "labs_exist": true,
+            "discussion_exists": false
+        },
+        "schedule": {
+            "office_hours": [],
+            "key_dates": [
+                {
+                    "id": 1,
+                    "title": "First lecture",
+                    "date": "2023-09-06T00:00:00+0500"
+                },
+                {
+                    "id": 2,
+                    "title": "Midtern Exam 1",
+                    "date": "2023-10-06T00:00:00+0500"
+                },
+                {
+                    "id": 3,
+                    "title": "Midterm Exam 2",
+                    "date": "2023-11-10T00:00:00+0500"
+                },
+                {
+                    "id": 4,
+                    "title": "Final exam (section 001)",
+                    "date": "2023-12-18T00:00:00+0500"
+                },
+                {
+                    "id": 5,
+                    "title": "Final exam (section 010)",
+                    "date": "2023-12-19T00:00:00+0500"
+                },
+                {
+                    "id": 6,
+                    "title": "Final exam (section 020)",
+                    "date": "2023-12-21T00:00:00+0500"
+                }
+            ]
+        },
+        "staff": [
+            {
+                "id": 1,
+                "name": "Jack Kolb",
+                "role": "Professor",
+                "email": "jhkolb@umn.edu"
+            },
+            {
+                "id": 2,
+                "name": "Lucas Olsen",
+                "email": "olse0280@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 3,
+                "name": "Lukas Karel",
+                "email": "karel084@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 4,
+                "name": "Lydia Alem",
+                "email": "alem0046@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 5,
+                "name": "Michael Angara",
+                "email": "angar016@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 6,
+                "name": "Muqing Liu",
+                "email": "liu01693@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 7,
+                "name": "Mya Yoder",
+                "email": "yoder098@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 8,
+                "name": "Nicholas Soto",
+                "email": "soto0056@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 9,
+                "name": "Noah Hendrickson",
+                "email": "hend0800@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 10,
+                "name": "Omar Elgohary",
+                "email": "elgoh003@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 11,
+                "name": "Rayan Amir",
+                "email": "amir0045@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 12,
+                "name": "Sohan Addagudi",
+                "email": "addag009@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 13,
+                "name": "Thomas Starks",
+                "email": "stark792@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 14,
+                "name": "Yeow Shaun Loo",
+                "email": "loo00013@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 15,
+                "name": "Yixun Wei",
+                "email": "wei00161@umn.edu",
+                "role": "GTA"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "full_class_title": "CSCI 2033",
+        "class_description": "This course explores computer systems and their components, including hardware and software mechanisms, data representation, boolean algebra, machine-level programs, instruction set architecture, processor organization, memory hierarchy, virtual memory, compiling, linking, and programming in C.",
+        "course": {
+            "id": 3,
+            "course_type": "CSCI",
+            "course_number": 2033,
+            "prerequisites": [
+                {
+                    "id": 2,
+                    "course_type": "CSCI",
+                    "course_number": 1913,
+                    "prerequisites": [
+                        {
+                            "id": 3,
+                            "course_type": "CSCI",
+                            "course_number": "1933",
+                            "prerequisites": []
+                        }
+                    ]
+                }
+            ]
+        },
+        "required_materials": [
+            {
+                "id": 1,
+                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+            }
+        ],
+        "policies": [
+            {
+                "id": 1,
+                "title": "Academic Integrity",
+                "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
+            }
+        ],
+        "grades": {
+            "id": 1,
+            "grade_lines": [
+                {
+                    "id": 1,
+                    "grade_name": "A",
+                    "upper_precentage": 100,
+                    "lower_precentage": 93
+                },
+                {
+                    "id": 2,
+                    "grade_name": "A-",
+                    "upper_precentage": 92,
+                    "lower_precentage": 90
+                },
+                {
+                    "id": 3,
+                    "grade_name": "B+",
+                    "upper_precentage": 89,
+                    "lower_precentage": 87
+                },
+                {
+                    "id": 4,
+                    "grade_name": "B",
+                    "upper_precentage": 87,
+                    "lower_precentage": 83
+                },
+                {
+                    "id": 5,
+                    "grade_name": "B-",
+                    "upper_precentage": 82,
+                    "lower_precentage": 80
+                },
+                {
+                    "id": 6,
+                    "grade_name": "C+",
+                    "upper_precentage": 79,
+                    "lower_precentage": 77
+                },
+                {
+                    "id": 7,
+                    "grade_name": "C",
+                    "upper_precentage": 76,
+                    "lower_precentage": 73
+                },
+                {
+                    "id": 8,
+                    "grade_name": "C-",
+                    "upper_precentage": 72,
+                    "lower_precentage": 70
+                },
+                {
+                    "id": 9,
+                    "grade_name": "D+",
+                    "upper_precentage": 69,
+                    "lower_precentage": 67
+                },
+                {
+                    "id": 10,
+                    "grade_name": "D",
+                    "upper_precentage": 66,
+                    "lower_precentage": 63
+                },
+                {
+                    "id": 11,
+                    "grade_name": "D-",
+                    "upper_precentage": 62,
+                    "lower_precentage": 60
+                },
+                {
+                    "id": 12,
+                    "grade_name": "F",
+                    "upper_precentage": 59,
+                    "lower_precentage": 0
+                }
+            ],
+            "grade_categories": [
+                {
+                    "id": 1,
+                    "title": "Weekly Homework Quizzes",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 2,
+                    "title": "Laboratory Assignments",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 3,
+                    "title": "Course Projects",
+                    "grade_precentage": "35%"
+                },
+                {
+                    "id": 4,
+                    "title": "Midterm Exam 1",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 5,
+                    "title": "Midterm Exam 2",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 6,
+                    "title": "Final Exam (Cumulative)",
+                    "grade_precentage": "15%"
+                },
+                {
+                    "id": 7,
+                    "title": "Participation",
+                    "grade_precentage": "5%"
+                }
+            ],
+            "lecture_exists": true,
+            "labs_exist": true,
+            "discussion_exists": false
+        },
+        "schedule": {
+            "office_hours": [],
+            "key_dates": [
+                {
+                    "id": 1,
+                    "title": "First lecture",
+                    "date": "2023-09-06T00:00:00+0500"
+                },
+                {
+                    "id": 2,
+                    "title": "Midtern Exam 1",
+                    "date": "2023-10-06T00:00:00+0500"
+                },
+                {
+                    "id": 3,
+                    "title": "Midterm Exam 2",
+                    "date": "2023-11-10T00:00:00+0500"
+                },
+                {
+                    "id": 4,
+                    "title": "Final exam (section 001)",
+                    "date": "2023-12-18T00:00:00+0500"
+                },
+                {
+                    "id": 5,
+                    "title": "Final exam (section 010)",
+                    "date": "2023-12-19T00:00:00+0500"
+                },
+                {
+                    "id": 6,
+                    "title": "Final exam (section 020)",
+                    "date": "2023-12-21T00:00:00+0500"
+                }
+            ]
+        },
+        "staff": [
+            {
+                "id": 1,
+                "name": "Jack Kolb",
+                "role": "Professor",
+                "email": "jhkolb@umn.edu"
+            },
+            {
+                "id": 2,
+                "name": "Lucas Olsen",
+                "email": "olse0280@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 3,
+                "name": "Lukas Karel",
+                "email": "karel084@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 4,
+                "name": "Lydia Alem",
+                "email": "alem0046@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 5,
+                "name": "Michael Angara",
+                "email": "angar016@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 6,
+                "name": "Muqing Liu",
+                "email": "liu01693@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 7,
+                "name": "Mya Yoder",
+                "email": "yoder098@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 8,
+                "name": "Nicholas Soto",
+                "email": "soto0056@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 9,
+                "name": "Noah Hendrickson",
+                "email": "hend0800@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 10,
+                "name": "Omar Elgohary",
+                "email": "elgoh003@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 11,
+                "name": "Rayan Amir",
+                "email": "amir0045@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 12,
+                "name": "Sohan Addagudi",
+                "email": "addag009@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 13,
+                "name": "Thomas Starks",
+                "email": "stark792@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 14,
+                "name": "Yeow Shaun Loo",
+                "email": "loo00013@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 15,
+                "name": "Yixun Wei",
+                "email": "wei00161@umn.edu",
+                "role": "GTA"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "full_class_title": "CSCI 4041",
+        "class_description": "This course explores computer systems and their components, including hardware and software mechanisms, data representation, boolean algebra, machine-level programs, instruction set architecture, processor organization, memory hierarchy, virtual memory, compiling, linking, and programming in C.",
+        "course": {
+            "id": 4,
+            "course_type": "CSCI",
+            "course_number": 4041,
+            "prerequisites": [
+                {
+                    "id": 2,
+                    "course_type": "CSCI",
+                    "course_number": 1913,
+                    "prerequisites": [
+                        {
+                            "id": 3,
+                            "course_type": "CSCI",
+                            "course_number": "1933",
+                            "prerequisites": []
+                        }
+                    ]
+                }
+            ]
+        },
+        "required_materials": [
+            {
+                "id": 1,
+                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+            }
+        ],
+        "policies": [
+            {
+                "id": 1,
+                "title": "Academic Integrity",
+                "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
+            }
+        ],
+        "grades": {
+            "id": 1,
+            "grade_lines": [
+                {
+                    "id": 1,
+                    "grade_name": "A",
+                    "upper_precentage": 100,
+                    "lower_precentage": 93
+                },
+                {
+                    "id": 2,
+                    "grade_name": "A-",
+                    "upper_precentage": 92,
+                    "lower_precentage": 90
+                },
+                {
+                    "id": 3,
+                    "grade_name": "B+",
+                    "upper_precentage": 89,
+                    "lower_precentage": 87
+                },
+                {
+                    "id": 4,
+                    "grade_name": "B",
+                    "upper_precentage": 87,
+                    "lower_precentage": 83
+                },
+                {
+                    "id": 5,
+                    "grade_name": "B-",
+                    "upper_precentage": 82,
+                    "lower_precentage": 80
+                },
+                {
+                    "id": 6,
+                    "grade_name": "C+",
+                    "upper_precentage": 79,
+                    "lower_precentage": 77
+                },
+                {
+                    "id": 7,
+                    "grade_name": "C",
+                    "upper_precentage": 76,
+                    "lower_precentage": 73
+                },
+                {
+                    "id": 8,
+                    "grade_name": "C-",
+                    "upper_precentage": 72,
+                    "lower_precentage": 70
+                },
+                {
+                    "id": 9,
+                    "grade_name": "D+",
+                    "upper_precentage": 69,
+                    "lower_precentage": 67
+                },
+                {
+                    "id": 10,
+                    "grade_name": "D",
+                    "upper_precentage": 66,
+                    "lower_precentage": 63
+                },
+                {
+                    "id": 11,
+                    "grade_name": "D-",
+                    "upper_precentage": 62,
+                    "lower_precentage": 60
+                },
+                {
+                    "id": 12,
+                    "grade_name": "F",
+                    "upper_precentage": 59,
+                    "lower_precentage": 0
+                }
+            ],
+            "grade_categories": [
+                {
+                    "id": 1,
+                    "title": "Weekly Homework Quizzes",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 2,
+                    "title": "Laboratory Assignments",
+                    "grade_precentage": "10%"
+                },
+                {
+                    "id": 3,
+                    "title": "Course Projects",
+                    "grade_precentage": "35%"
+                },
+                {
+                    "id": 4,
+                    "title": "Midterm Exam 1",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 5,
+                    "title": "Midterm Exam 2",
+                    "grade_precentage": "12.5%"
+                },
+                {
+                    "id": 6,
+                    "title": "Final Exam (Cumulative)",
+                    "grade_precentage": "15%"
+                },
+                {
+                    "id": 7,
+                    "title": "Participation",
+                    "grade_precentage": "5%"
+                }
+            ],
+            "lecture_exists": true,
+            "labs_exist": true,
+            "discussion_exists": false
+        },
+        "schedule": {
+            "office_hours": [],
+            "key_dates": [
+                {
+                    "id": 1,
+                    "title": "First lecture",
+                    "date": "2023-09-06T00:00:00+0500"
+                },
+                {
+                    "id": 2,
+                    "title": "Midtern Exam 1",
+                    "date": "2023-10-06T00:00:00+0500"
+                },
+                {
+                    "id": 3,
+                    "title": "Midterm Exam 2",
+                    "date": "2023-11-10T00:00:00+0500"
+                },
+                {
+                    "id": 4,
+                    "title": "Final exam (section 001)",
+                    "date": "2023-12-18T00:00:00+0500"
+                },
+                {
+                    "id": 5,
+                    "title": "Final exam (section 010)",
+                    "date": "2023-12-19T00:00:00+0500"
+                },
+                {
+                    "id": 6,
+                    "title": "Final exam (section 020)",
+                    "date": "2023-12-21T00:00:00+0500"
+                }
+            ]
+        },
+        "staff": [
+            {
+                "id": 1,
+                "name": "Jack Kolb",
+                "role": "Professor",
+                "email": "jhkolb@umn.edu"
+            },
+            {
+                "id": 2,
+                "name": "Lucas Olsen",
+                "email": "olse0280@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 3,
+                "name": "Lukas Karel",
+                "email": "karel084@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 4,
+                "name": "Lydia Alem",
+                "email": "alem0046@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 5,
+                "name": "Michael Angara",
+                "email": "angar016@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 6,
+                "name": "Muqing Liu",
+                "email": "liu01693@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 7,
+                "name": "Mya Yoder",
+                "email": "yoder098@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 8,
+                "name": "Nicholas Soto",
+                "email": "soto0056@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 9,
+                "name": "Noah Hendrickson",
+                "email": "hend0800@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 10,
+                "name": "Omar Elgohary",
+                "email": "elgoh003@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 11,
+                "name": "Rayan Amir",
+                "email": "amir0045@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 12,
+                "name": "Sohan Addagudi",
+                "email": "addag009@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 13,
+                "name": "Thomas Starks",
+                "email": "stark792@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 14,
+                "name": "Yeow Shaun Loo",
+                "email": "loo00013@umn.edu",
+                "role": "UTA"
+            },
+            {
+                "id": 15,
+                "name": "Yixun Wei",
+                "email": "wei00161@umn.edu",
+                "role": "GTA"
+            }
+        ]
+    }
+]

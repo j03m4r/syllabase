@@ -15,11 +15,11 @@ const config: Config = {
       },
     },
     colors: {
-      'grape': '#A682FF',
-      'purple': '#715AFF',
-      'slate': '#5887FF',
-      'teal': '#55C1FF',
-      'navy': '#102E4F'
+      'brown': '#755330',
+      'white': '#ffffff',
+      'black': '#000000',
+      'beige': '#ffffe4',
+      'offWhite': '#f5f5f5'
     },
   },
   plugins: [],
