@@ -19,7 +19,13 @@ const config: Config = {
       'white': '#ffffff',
       'black': '#000000',
       'beige': '#ffffe4',
-      'offWhite': '#f5f5f5'
+      'offWhite': '#f5f5f5',
+      'meteorite': '#371F76',
+      'lavender': '#CFBDFF',
+      'periwinkle': '#E5DBFF',
+      'darkpurple': '#291E42',
+      'mint': '#99edc3',
+      'darkgrey': '#373737'
     },
   },
   plugins: [],

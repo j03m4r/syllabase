@@ -17,7 +17,7 @@ const DashboardContent: React.FC<DashboardContentProps> = ({
     }
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full h-full items-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full h-full gap-10 pt-28">
             {courses.map((course) => (
                 <CourseCard key={course.id} course={course} />
             ))}

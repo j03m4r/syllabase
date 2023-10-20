@@ -2,6 +2,7 @@
 
 import { Course } from "@/types";
 import Link from "next/link";
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 interface CourseCardProps {
     course: Course;
@@ -11,9 +12,14 @@ const CourseCard: React.FC<CourseCardProps> = ({
     course
 }) => {
     return (
-        <Link href={`/course/${course.id}`} className="relative flex justify-center items-center h-[300px] p-4 border-black border shadow-md 
-        hover:shadow-lg cursor-pointer transition duration-200 text-center text-xl font-bold hover:-translate-y-2">
-            {course.full_class_title}
+        <Link href={`/course/${course.id}`} className="group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
+        hover:shadow-xl cursor-pointer transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10">
+            <div className="flex justify-center items-center h-3/4 overflow-ellipsis">
+                {course.full_class_title}
+            </div>
+            <div className="h-1/4 group-hover:translate-x-1 duration-300 transition ease-in-out">
+                <MdKeyboardArrowRight size={40} />
+            </div>
         </Link>
     );
 }

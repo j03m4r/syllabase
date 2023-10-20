@@ -8,7 +8,7 @@ export interface CourseBare {
     id: number;
     course_type: string;
     course_number: string;
-    prerequisites: Course[];
+    prerequisites: CourseBare[];
 };
 
 export interface CourseMaterial {
