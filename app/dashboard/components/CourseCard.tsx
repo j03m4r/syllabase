@@ -15,7 +15,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         <Link href={`/course/${course.id}`} className="group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
         hover:shadow-xl cursor-pointer transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10">
             <div className="flex justify-center items-center h-3/4 overflow-ellipsis">
-                {course.course.course_type} {course.course.course_number}
+                {course.specifier} {course.number}
             </div>
             <div className="h-1/4 group-hover:translate-x-1 duration-300 transition ease-in-out">
                 <MdKeyboardArrowRight size={50} />

@@ -4,13 +4,6 @@ export interface Profile {
     avatar_url: string;
 };
 
-export interface CourseBare {
-    id: number;
-    course_type: string;
-    course_number: string;
-    prerequisites: CourseBare[];
-};
-
 export interface CourseMaterial {
     id: number;
     name: string;
@@ -19,9 +12,8 @@ export interface CourseMaterial {
 
 export interface CoursePolicy {
     id: number;
-    title: string;
+    name: string;
     description: string;
-    quantity?: number;
 };
 
 export interface GradeLine {
@@ -33,19 +25,9 @@ export interface GradeLine {
 
 export interface GradeCategory {
     id: number;
-    title: string;
+    name: string;
     grade_precentage: number;
-    quantity?: number;
-    curved?: boolean;
-};
-
-export interface Grades {
-    id: number;
-    grade_lines: GradeLine[];
-    grade_categories: GradeCategory[];
-    lecture_exists: boolean;
-    labs_exist: boolean;
-    discussion_exists: boolean;
+    num_drops?: number;
 };
 
 export interface DayOfWeek {
@@ -53,47 +35,44 @@ export interface DayOfWeek {
     name: string;
 };
 
-export interface CourseEvent {
+export interface Employee {
     id: number;
-    lead_by_name: number; // Foreign id key to Enployee entry
+    name: string;
+    email: string;
+};
+
+export interface GradeCurve {
+    id: number;
+    description: string;
+};
+
+export interface Event {
+    id: number;
+    title: string;
+    lead_by: Employee[];
     day_of_week: DayOfWeek;
     start_time: string;
     end_time: string;
 };
 
-export interface KeyDate {
-    id: number;
-    title: string;
-    description?: string;
-    date: string;
-    start_time?: string;
-    end_time?: string;
-};
-
-export interface Employee {
-    id: number;
-    name: string;
-    role: string;
-    description?: string;
-    hours?: string;
-    email?: string;
-    phone_number?: string;
-    website?: string;
-};
-
 export interface Course {
     id: number;
     full_class_title?: string;
-    class_description?: string;
-    course: CourseBare;
-    required_materials: CourseMaterial[];
-    policies: CoursePolicy[];
-    grades: Grades;
-    schedule: {
-        office_hours: CourseEvent[],
-        key_dates: KeyDate[]
-    };
-    staff: Employee[];
+    specifier: string;
+    number: number;
+    course_materials?: CourseMaterial[];
+    course_policies?: CoursePolicy[];
+    course_grade_lines: GradeLine[];
+    course_grade_categories: GradeCategory[];
+    grade_curve?: GradeCurve;
+    course_lectures: Event[];
+    course_labs?: Event[];
+    course_discussions?: Event[];
+    lead_by: Employee;
+    course_teaching_staff?: Employee[];
+    course_office_hours: Event[];
+    raw_syllabus_text: string;
+    status: number;
 };
 
 const myClass = <Course>{}; // You can check types on this example "class"

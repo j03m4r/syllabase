@@ -6,7 +6,9 @@ export default async function Dashboard() {
 	const courses = await getUserCourses();
 	return (
 		<Container>
-			<DashboardContent courses={courses} />
+			<div className="py-28">
+				<DashboardContent courses={courses} />
+			</div>
 		</Container>
 	)
 }

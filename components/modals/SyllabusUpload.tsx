@@ -25,7 +25,6 @@ const SyllabusUpload = () => {
         register,
         handleSubmit,
         reset,
-        setValue,
         watch,
     } = useForm<FieldValues>({
         defaultValues: {
@@ -43,12 +42,12 @@ const SyllabusUpload = () => {
             // }
 
             setIsLoading(true);
-            let ratingObject = { text: values.syllabusText };
+            let ratingObject = { raw_syllabus_text: values.syllabusText }; // Later add profile_id: user.id
 
             // INSERTING SYLLABUS TEXT
             const {
                 error
-            } =  await supabaseClient.from('syllabi_texts').insert(ratingObject);
+            } =  await supabaseClient.from('courses').insert(ratingObject);
 
             if (error) {
                 return toast.error(error.message);
@@ -68,11 +67,11 @@ const SyllabusUpload = () => {
 
     return (
         <Modal title="Course Creation" description="Upload a course syllabus" isOpen={isOpen} onChange={onChange}>
-            <div className="flex flex-col items-center justify-between w-full h-full gap-y-5">
-                <div className="relative flex flex-col items-start justify-center w-full h-fit gap-y-2">
+            <div className="flex flex-col items-center justify-between w-full h-full md:h-[70vh] gap-y-5">
+                <div className="relative flex flex-col items-start justify-center w-full h-full gap-y-2">
                     <label htmlFor="syllabusText" className="text-2xl font-semibold">Syllabus Text</label>
                     <textarea id="syllabusText" {...register('syllabusText', { required: false })} value={syllabusText || ""} 
-                    placeholder="Copy course syllabus here... (yes all of it)" disabled={isLoading} rows={18} className="w-full 
+                    placeholder="Copy course syllabus here... (yes all of it)" disabled={isLoading} className="w-full h-full
                     rounded-xl border border-black p-4 focus:outline-none placeholder:text-grey resize-none"/>
                     <div className="absolute left-4 bottom-3 font-extralight">
                         {syllabusText.length}
