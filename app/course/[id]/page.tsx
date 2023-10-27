@@ -1,4 +1,6 @@
 import getCourseById from "@/actions/getCourseById";
+import CoursePageContent from "./components/CoursePageContent";
+import Container from "@/components/general/Container";
 
 interface IParams {
     id: number;
@@ -7,7 +9,11 @@ interface IParams {
 const CoursePage = async ({ params }: { params: IParams }) => {
     const course = await getCourseById(params.id);
     return (
-        <div>{course.full_class_title}</div>
+        <Container>
+            <div className="py-28">
+                <CoursePageContent course={course} />
+            </div>
+        </Container>
     );
 };
 

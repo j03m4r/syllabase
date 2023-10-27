@@ -13,7 +13,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
     return (
         <Link href={`/course/${course.id}`} className="group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
-        hover:shadow-xl cursor-pointer transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10">
+        hover:shadow-xl cursor-pointer transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10
+        border border-lavender">
             <div className="flex justify-center items-center h-3/4 overflow-ellipsis">
                 {course.specifier} {course.number}
             </div>

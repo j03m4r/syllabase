@@ -4,29 +4,37 @@ export interface Profile {
     avatar_url: string;
 };
 
+export interface SimpleDescriptor {
+    id: number;
+    name?: string;
+    title?: string;
+    description?: string;
+    email?: string;
+};
+
 export interface CourseMaterial {
     id: number;
-    name: string;
-    description: string;
+    title: string;
+    description?: string;
 };
 
 export interface CoursePolicy {
     id: number;
-    name: string;
+    title: string;
     description: string;
 };
 
 export interface GradeLine {
     id: number;
     grade_name: string; // i.e. "A", "C-", ...
-    upper_precentage: number; // "A" might not have an upper percentage
-    lower_precentage: number;
+    upper_percentage: number; // "A" might not have an upper percentage
+    lower_percentage: number;
 };
 
 export interface GradeCategory {
     id: number;
     name: string;
-    grade_precentage: number;
+    grade_percentage: number;
     num_drops?: number;
 };
 

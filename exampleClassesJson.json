@@ -8,7 +8,8 @@
         "course_materials": [
             {
                 "id": 1,
-                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+                "title": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016",
+                "description": null
             }
         ],
         "course_policies": [
@@ -18,7 +19,7 @@
                 "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
             }
         ],
-        "course_grades_lines": [
+        "course_grade_lines": [
             {
                 "id": 1,
                 "grade_name": "A",
@@ -307,7 +308,8 @@
         "course_materials": [
             {
                 "id": 1,
-                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+                "title": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016",
+                "description": null
             }
         ],
         "course_policies": [
@@ -317,7 +319,7 @@
                 "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
             }
         ],
-        "course_grades_lines": [
+        "course_grade_lines": [
             {
                 "id": 1,
                 "grade_name": "A",
@@ -607,7 +609,8 @@
         "course_materials": [
             {
                 "id": 1,
-                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+                "title": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016",
+                "description": null
             }
         ],
         "course_policies": [
@@ -617,7 +620,7 @@
                 "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
             }
         ],
-        "course_grades_lines": [
+        "course_grade_lines": [
             {
                 "id": 1,
                 "grade_name": "A",
@@ -907,7 +910,8 @@
         "course_materials": [
             {
                 "id": 1,
-                "name": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016"
+                "title": "Computer Systems: A Programmer's Perspective, Third Edition, by Randal E. Bryant and David R. O'Halloran, 2016",
+                "description": null
             }
         ],
         "course_policies": [
@@ -917,7 +921,7 @@
                 "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
             }
         ],
-        "course_grades_lines": [
+        "course_grade_lines": [
             {
                 "id": 1,
                 "grade_name": "A",
