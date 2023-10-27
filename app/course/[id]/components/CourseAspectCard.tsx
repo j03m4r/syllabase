@@ -50,6 +50,10 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
         if (arraysEqual(fields, ["id", "name", "email"])) {
             // @ts-ignore
             content = <SimpleDescriptor element={courseAspect} />
+        } else if (fields===null) {
+            content = (
+                <div className="text-xl font-semibold">N/A</div>
+            )
         }
     }
     
