@@ -2,9 +2,11 @@
 
 import { useEffect } from "react";
 import SimpleDescriptor from "./SimpleDescriptor";
+import PieChart from "./PieChart";
+import GradeLineVisualizer from "./GradeLineVisualizer";
 
 interface CourseAspectCardProps {
-    courseAspect: object;
+    courseAspect: any;
 };
 
 const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
@@ -25,12 +27,9 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
     }
     
     let content = null;
-    if (Array.isArray(courseAspect) && courseAspect.length) {
+    if (Array.isArray(courseAspect) && courseAspect.length) { // the course aspect is a list
         const fields = Object.keys(courseAspect[0]);
-
-        if (arraysEqual(fields, ["id", "description"]) || arraysEqual(fields, ["id", "description"]) || arraysEqual(fields, ["id", "title", "description"])
-        || arraysEqual(fields, ["id", "name", "email"])) {
-            // console.log(fields)
+        if (arraysEqual(fields, ["id", "description"]) || arraysEqual(fields, ["id", "description"]) || arraysEqual(fields, ["id", "name", "email"])) {
             content = (
                 <div className="flex flex-row justify-center items-center gap-y-4 gap-x-8 w-fit h-fit flex-wrap">
                     {courseAspect.map((aspect) => (
@@ -38,23 +37,33 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
                     ))}
                 </div>
             )
+        } else if (arraysEqual(fields, ["id", "title", "description"])) {
+            content = (
+                <ol className="flex flex-col gap-y-2 list-decimal px-4">
+                    {courseAspect.map((aspect) => (
+                        <li key={aspect.id} className="text-xl font-semibold">
+                            <SimpleDescriptor element={aspect} />
+                        </li>
+                    ))}
+                </ol>
+            );
         } else if (arraysEqual(fields, ["id", "grade_name", "upper_percentage", "lower_percentage"])) {
-
-        } else if (arraysEqual(fields, ["id", "name", "grade_percentage", "num_drops"])) {
-
+            content = <GradeLineVisualizer gradeLines={courseAspect} />
+        } else if (arraysEqual(fields, ["id", "name", "grade_percentage"] || arraysEqual(fields, ["id", "name", "grade_percentage", "num_drops"]))) {
+            content = <PieChart gradeCategories={courseAspect} />
         } else if (arraysEqual(fields, ["id", "title", "lead_by", "day_of_week", "start_time", "end_time"])) {
 
         }
-    } else {
-        const fields = courseAspect;
-        if (arraysEqual(fields, ["id", "name", "email"])) {
-            // @ts-ignore
-            content = <SimpleDescriptor element={courseAspect} />
-        } else if (fields===null) {
-            content = (
-                <div className="text-xl font-semibold">N/A</div>
-            )
-        }
+    } else if (courseAspect && arraysEqual(Object.keys(courseAspect), ["id", "name", "email"])) { // the course aspect is not a list
+        content = <SimpleDescriptor element={courseAspect} />
+    } else if (typeof courseAspect==="number") {
+        content = (
+            <div className="flex justify-center items-center w-full text-6xl font-semibold">{courseAspect}</div>
+        )
+    } else if (courseAspect===null) {
+        content = (
+            <div className="text-xl font-light">N/A</div>
+        )
     }
     
     return content;

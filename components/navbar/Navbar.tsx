@@ -16,7 +16,7 @@ const Navbar = () => {
                         justify-between
                     ">
                         <div className="select-none text-4xl hover:cursor-pointer w-fit font-bold"
-                        onClick={() => router.push("/dashboard")}>syllaBASE</div>
+                        onClick={() => router.push("/dashboard")}>Syllabase</div>
                         <div>User menu</div>
                 </div>
             </Container>

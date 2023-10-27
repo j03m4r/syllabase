@@ -24,8 +24,14 @@ const config: Config = {
       'lavender': '#CFBDFF',
       'periwinkle': '#E5DBFF',
       'darkpurple': '#291E42',
+      'lightpink': '#E4BDFF',
+      'pink': '#FFBDE0',
+      'cyan': '#9ADFED',
+      'lightblue': '#BDEAFF',
       'mint': '#99edc3',
-      'darkgrey': '#373737'
+      'lime': '#ACED9A',
+      'yellow': '#EDEC9A',
+      'khaki': '#EDD89A'
     },
   },
   plugins: [],

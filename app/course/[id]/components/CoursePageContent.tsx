@@ -3,6 +3,7 @@
 import { Course } from "@/types";
 import { useEffect, useState } from "react";
 import CourseAspectCard from "./CourseAspectCard";
+import { twMerge } from "tailwind-merge";
 
 interface CoursePageContentProps {
     course: Course;
@@ -65,8 +66,9 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({
                     // @ts-ignore
                     if (fieldLabels[field]) {
                         content = (
-                            <div key={field} className="select-none flex flex-col items-start justify-center w-fit p-8 
-                            border rounded-xl shadow-lg border-lavender gap-y-4 max-w-[50%]">
+                            <div key={field} className={twMerge(`select-none flex flex-col items-start justify-center w-fit p-8 
+                            rounded-xl shadow-lg gap-y-4 max-w-full md:max-w-[40%] min-w-[260px]`, field==="course_teaching_staff" ? "w-full" : "w-fit", 
+                            field==="course_grade_categories" ? "w-full md:w-1/2 md:max-w-full" : null)}>
                                 {/* @ts-ignore */}
                                 <div className="text-4xl font-bold">{fieldLabels[field]}</div>
                                 {/* @ts-ignore */}

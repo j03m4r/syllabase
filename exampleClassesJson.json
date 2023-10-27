@@ -2,7 +2,6 @@
     {
         "id": 1,
         "full_class_title": "CSCI 2021 - Introduction to Computer Systems",
-        "class_description": "This course explores computer systems and their components, including hardware and software mechanisms, data representation, boolean algebra, machine-level programs, instruction set architecture, processor organization, memory hierarchy, virtual memory, compiling, linking, and programming in C.",
         "specifier": "CSCI",
         "number": 2021,
         "course_materials": [
@@ -97,37 +96,37 @@
             {
                 "id": 1,
                 "name": "Weekly Homework Quizzes",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 2,
                 "name": "Laboratory Assignments",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 3,
                 "name": "Course Projects",
-                "grade_percentage": "35%"
+                "grade_percentage": 35
             },
             {
                 "id": 4,
                 "name": "Midterm Exam 1",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 5,
                 "name": "Midterm Exam 2",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 6,
                 "name": "Final Exam (Cumulative)",
-                "grade_percentage": "15%"
+                "grade_percentage": 15
             },
             {
                 "id": 7,
                 "name": "Participation",
-                "grade_percentage": "5%"
+                "grade_percentage": 5
             }
         ],
         "num_lecture_misses": null,
@@ -397,37 +396,37 @@
             {
                 "id": 1,
                 "name": "Weekly Homework Quizzes",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 2,
                 "name": "Laboratory Assignments",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 3,
                 "name": "Course Projects",
-                "grade_percentage": "35%"
+                "grade_percentage": 35
             },
             {
                 "id": 4,
                 "name": "Midterm Exam 1",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 5,
                 "name": "Midterm Exam 2",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 6,
                 "name": "Final Exam (Cumulative)",
-                "grade_percentage": "15%"
+                "grade_percentage": 15
             },
             {
                 "id": 7,
                 "name": "Participation",
-                "grade_percentage": "5%"
+                "grade_percentage": 5
             }
         ],
         "num_lecture_misses": null,
@@ -698,37 +697,37 @@
             {
                 "id": 1,
                 "name": "Weekly Homework Quizzes",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 2,
                 "name": "Laboratory Assignments",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 3,
                 "name": "Course Projects",
-                "grade_percentage": "35%"
+                "grade_percentage": 35
             },
             {
                 "id": 4,
                 "name": "Midterm Exam 1",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 5,
                 "name": "Midterm Exam 2",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 6,
                 "name": "Final Exam (Cumulative)",
-                "grade_percentage": "15%"
+                "grade_percentage": 15
             },
             {
                 "id": 7,
                 "name": "Participation",
-                "grade_percentage": "5%"
+                "grade_percentage": 5
             }
         ],
         "num_lecture_misses": null,
@@ -999,37 +998,37 @@
             {
                 "id": 1,
                 "name": "Weekly Homework Quizzes",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 2,
                 "name": "Laboratory Assignments",
-                "grade_percentage": "10%"
+                "grade_percentage": 10
             },
             {
                 "id": 3,
                 "name": "Course Projects",
-                "grade_percentage": "35%"
+                "grade_percentage": 35
             },
             {
                 "id": 4,
                 "name": "Midterm Exam 1",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 5,
                 "name": "Midterm Exam 2",
-                "grade_percentage": "12.5%"
+                "grade_percentage": 12.5
             },
             {
                 "id": 6,
                 "name": "Final Exam (Cumulative)",
-                "grade_percentage": "15%"
+                "grade_percentage": 15
             },
             {
                 "id": 7,
                 "name": "Participation",
-                "grade_percentage": "5%"
+                "grade_percentage": 5
             }
         ],
         "num_lecture_misses": null,
