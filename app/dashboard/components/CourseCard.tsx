@@ -13,7 +13,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
     course
 }) => {
     return (
-        <Link href={`/course/${course.id}`} className={twMerge(`group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
+        <Link href={course.status==="Processing" ? {} : `/course/${course.id}`} className={twMerge(`group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
         transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10`, 
         course.status==="Processing" ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:shadow-xl')}>
             <div className="flex justify-center items-center h-3/4 overflow-ellipsis">

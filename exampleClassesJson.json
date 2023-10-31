@@ -2,8 +2,7 @@
     {
         "id": 1,
         "full_class_title": "CSCI 2021 - Introduction to Computer Systems",
-        "specifier": "CSCI",
-        "number": 2021,
+        "specifier": "CSCI 2021",
         "course_materials": [
             {
                 "id": 1,
