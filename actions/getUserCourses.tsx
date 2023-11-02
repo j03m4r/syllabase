@@ -19,10 +19,7 @@ const getUserCourses = async (): Promise<Course[]> => {
 
     if (!session) { return [] }
 
-    const { data, error } = await supabase.from('courses').select(`*, course_materials(*), course_policies(*), 
-    course_grade_lines(*), course_grade_categories(*), grade_curve(*), course_lectures(*), course_labs(*),
-    course_discussions(*), lead_by(*), course_teaching_assistants(*), course_office_hours(*), course_midterms(*),
-    course_finals(*)`).eq('profile_id', session.user.id)
+    const { data, error } = await supabase.from('courses').select("id, specifier, status").eq('profile_id', session.user.id)
     .order('created_at', { ascending:false });
 
     if (error) {
