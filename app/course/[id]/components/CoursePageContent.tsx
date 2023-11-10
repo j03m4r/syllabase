@@ -37,7 +37,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({
                 labels[1] = labels[1][0].toUpperCase() + labels[1].slice(1);
                 // @ts-ignore
                 setFieldLabels((prev) => ({ ...prev, [field]: `${labels[1]}` }));
-            } else if (twoWordsReg.test(field)) {
+            } else if (twoWordsReg.test(field) && field!=='full_title') {
                 let labels = field.match(twoWordsReg);
                 // @ts-ignore
                 labels[1] = labels[1][0].toUpperCase() + labels[1].slice(1);
@@ -60,6 +60,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({
 
     return (
         <div className="flex flex-row flex-wrap gap-x-5 gap-y-5 w-full h-full">
+            <div className="font-bold text-5xl">{course.full_title ? course.full_title : null}</div>
             {!isLoading ?
                 Object.keys(course).map((field) => {
                     let content = null;
@@ -68,7 +69,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({
                         content = (
                             <div key={field} className={twMerge(`select-none flex flex-col items-start justify-center w-fit p-8 
                             rounded-xl shadow-lg gap-y-4 max-w-full md:max-w-[40%] min-w-[260px]`, 
-                            field==="course_teaching_staff" ? "w-full md:max-w-full" : field==="course_grade_categories" ? "w-full md:w-1/2 md:max-w-full" : "w-fit")}>
+                            field==="course_teaching_staff"||field==="course_labs" ? "w-full md:max-w-full" : field==="course_grade_categories" ? "w-full md:w-1/2 md:max-w-full" : "w-fit")}>
                                 {/* @ts-ignore */}
                                 <div className="text-4xl font-bold">{fieldLabels[field]}</div>
                                 {/* @ts-ignore */}

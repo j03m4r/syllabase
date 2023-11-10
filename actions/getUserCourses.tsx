@@ -30,7 +30,7 @@ const getUserCourses = async (): Promise<Course[]> => {
         return [];
     }
 
-    return (data as Course[]);
+    return ([courses[0], ...data] as Course[]);
 };
 
 export default getUserCourses;

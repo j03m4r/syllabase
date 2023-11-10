@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "full_class_title": "CSCI 2021 - Introduction to Computer Systems",
+        "full_title": "CSCI 2021 - Introduction to Computer Systems",
         "specifier": "CSCI 2021",
         "course_materials": [
             {
@@ -15,6 +15,11 @@
                 "id": 1,
                 "title": "Academic Integrity",
                 "description": "All work you submit must be your own effort and reflect your individual understanding of the material. Collaboration is allowed only in specific scenarios."
+            },
+            {
+                "id": 2,
+                "title": "Equity and Inclusion",
+                "description": "Students are expected to maintain a high level of civility for all participants in and out of class meetings. This includes respecting participants of all genders, ethnicities, and social backgrounds. Harassment of any type will not be tolerated and failure to behave in a respectful manner will be reported to the University."
             }
         ],
         "course_grade_lines": [
@@ -134,8 +139,99 @@
         "course_office_hours": null,
         "course_labs": [
             {
-                "id": 23,
-                "title": "lab01",
+                "id": 2,
+                "title": "Lab 002",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "10:10:00",
+                "end_time": "11:00:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 3,
+                "title": "Lab 003",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "10:10:00",
+                "end_time": "11:00:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 5,
+                "title": "Lab 005",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "11:15:00",
+                "end_time": "12:05:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 6,
+                "title": "Lab 006",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "11:15:00",
+                "end_time": "12:05:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 7,
+                "title": "Lab 007",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "12:20:00",
+                "end_time": "13:10:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 8,
+                "title": "Lab 008",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "12:20:00",
+                "end_time": "13:10:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 11,
+                "title": "Lab 011",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "12:20:00",
+                "end_time": "13:10:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 12,
+                "title": "Lab 012",
                 "lead_by": [],
                 "day_of_week": {
                     "id": 3,
@@ -145,16 +241,107 @@
                 "end_time": "14:15:00",
                 "start_date": null,
                 "end_date": null
+            },
+            {
+                "id": 13,
+                "title": "Lab 013",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "14:30:00",
+                "end_time": "15:20:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 21,
+                "title": "Lab 021",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "08:00:00",
+                "end_time": "08:50:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 22,
+                "title": "Lab 022",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "09:05:00",
+                "end_time": "09:55:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 23,
+                "title": "Lab 023",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "09:05:00",
+                "end_time": "09:55:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 24,
+                "title": "Lab 024",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Wednesday"
+                },
+                "start_time": "09:05:00",
+                "end_time": "09:55:00",
+                "start_date": null,
+                "end_date": null
             }
         ],
         "course_lectures": [
             {
                 "id": 1,
-                "title": "First lecture",
+                "title": "Section 001 (M/W/F)",
                 "lead_by": [],
                 "day_of_week": {
                     "id": 3,
-                    "name": "Wednesday"
+                    "name": "Monday"
+                },
+                "start_time": "01:25:00",
+                "end_time": "02:15:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 2,
+                "title": "Section 010 (M/W/F)",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Monday"
+                },
+                "start_time": "3:35:00",
+                "end_time": "04:25:00",
+                "start_date": null,
+                "end_date": null
+            },
+            {
+                "id": 3,
+                "title": "Section 020 (M/W/F)",
+                "lead_by": [],
+                "day_of_week": {
+                    "id": 3,
+                    "name": "Monday"
                 },
                 "start_time": "10:10:00",
                 "end_time": "11:00:00",

@@ -55,7 +55,7 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
             content = <PieChart gradeCategories={courseAspect} />
         } else if (arraysEqual(fields, ["id", "title", "lead_by", "day_of_week", "start_time", "end_time", "start_date", "end_date"])) {
             content = (
-                <div className="flex flex-col gap-y-4 w-fit h-fit">
+                <div className="flex flex-col flex-wrap justify-center items-center gap-y-4 w-full h-fit max-h-[40vh]">
                     {courseAspect.map((aspect: Event) => (
                         <EventComponent key={aspect.id} event={aspect} />
                     ))}

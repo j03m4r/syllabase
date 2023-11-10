@@ -13,13 +13,13 @@ const CourseCard: React.FC<CourseCardProps> = ({
     course
 }) => {
     return (
-        <Link href={course.status==="Processing" ? {} : `/course/${course.id}`} className={twMerge(`group flex flex-col justify-evenly items-center h-[300px] p-10 shadow-lg 
-        transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10`, 
+        <Link href={course.status==="Processing" ? {} : `/course/${course.id}`} className={twMerge(`group flex flex-col justify-around items-center w-full h-full p-10 shadow-lg 
+        transition duration-300 ease-in-out text-3xl font-bold rounded-xl gap-y-10 bg-lavender`, 
         course.status==="Processing" ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:shadow-xl')}>
-            <div className="flex justify-center items-center h-3/4 overflow-ellipsis">
+            <div className="flex justify-center items-center h-1/2 overflow-ellipsis">
                 {course.specifier!==null ? course.specifier : 'Processing'}
             </div>
-            <div className={twMerge(`h-1/4 duration-300 transition ease-in-out`, course.status!=='Processing'&&'group-hover:translate-x-1')}>
+            <div className={twMerge(`h-1/2 duration-300 transition ease-in-out flex justify-center items-center`, course.status!=='Processing'&&'group-hover:translate-x-1')}>
                 <MdKeyboardArrowRight size={50} />
             </div>
         </Link>

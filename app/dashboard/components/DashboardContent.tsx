@@ -25,13 +25,13 @@ const DashboardContent: React.FC<DashboardContentProps> = ({
 
     return (
         <div className="relative flex flex-col w-full h-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full h-full gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full gap-10 ">
                 {courses.map((course) => (
                     <CourseCard key={course.id} course={course} />
                 ))}
             </div>
             <Button onClick={syllabusModal.onOpen} className="fixed flex justify-center items-center xl:bottom-14 md:bottom-8 
-            sm:bottom-2 bottom-4 rounded-full p-4 shadow-lg hover:shadow-xl transition duration-300 ease-in-out bg-white z-10">
+            sm:bottom-2 bottom-4 rounded-full p-4 shadow-lg hover:shadow-xl transition duration-300 ease-in-out bg-lavender z-10">
                 <AiOutlinePlus size={40} />
             </Button>
         </div>
