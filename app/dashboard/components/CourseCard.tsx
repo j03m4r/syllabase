@@ -17,7 +17,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         transition duration-300 ease-in-out text-center text-3xl font-bold rounded-xl gap-y-10`, 
         course.status==="Processing" ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:shadow-xl')}>
             <div className="flex justify-center items-center h-3/4 overflow-ellipsis">
-                {course.specifier!==null ? course.specifier : 'Processing'}
+                {course.status === "active" ? course.specifier : course.status}
             </div>
             <div className={twMerge(`h-1/4 duration-300 transition ease-in-out`, course.status!=='Processing'&&'group-hover:translate-x-1')}>
                 <MdKeyboardArrowRight size={50} />

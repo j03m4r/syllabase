@@ -8,14 +8,14 @@ import { Pie } from 'react-chartjs-2';
 ChartJs.register(ArcElement, Legend, ChartDataLabels, Tooltip);
 
 interface PieChartProps {
-    gradeCategories: GradeCategory[];
+    gradeCategories: [string, number][];
 };
 
 const PieChart: React.FC<PieChartProps> = ({
     gradeCategories
 }) => {
-    const labels = gradeCategories.map((gradeCategory) => gradeCategory.name);
-    const percentages = gradeCategories.map((gradeCategory) => gradeCategory.grade_percentage);
+    const labels = gradeCategories.map((gradeCategory) => gradeCategory[0]);
+    const percentages = gradeCategories.map((gradeCategory) => gradeCategory[1]);
     const data = {
         labels: labels,
         datasets: [{
