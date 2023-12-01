@@ -12,7 +12,6 @@ interface CoursePageContentProps {
 const CoursePageContent: React.FC<CoursePageContentProps> = ({
     course
 }) => {
-
     const courseTwoWordsReg = /^course_([a-z-_]+)_([a-z-_]+)$/;
     const courseOneWordReg = /^course_([a-z-_]+)$/;
     const twoWordsReg = /^([A-Za-z0-9]+)_([A-Za-z0-9]+)$/;
