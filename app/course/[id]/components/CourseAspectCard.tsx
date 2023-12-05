@@ -19,6 +19,7 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
       return <PieChart gradeCategories={courseAspect} />;
     case "important_dates":
       let events: Event[] = courseAspect;
+      if (events.length===0) return null;
       return (
         <ul className="flex flex-col gap-y-2 list-disc">
           {events.map((aspect, i) => (
@@ -27,6 +28,7 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
         </ul>
       );
     default:
+      if (typeof courseAspect==="string" && courseAspect.localeCompare("[]")===0) return null;
       return (
         <div className="flex flex-row gap-y-4 gap-x-8">
           <SimpleDescriptor elements={courseAspect} field={field} />

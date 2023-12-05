@@ -12,7 +12,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
 }, ref) => {
     return (
         <input type={type} className={twMerge(`flex w-full border border-primary px-5 py-4 text-sm placeholder:text-grey 
-        disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none focus:rounded-se-xl focus:rounded-bl-xl duration-200`, className)} disabled={disabled} ref={ref} {...props} />
+        disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none duration-200`, className)} disabled={disabled} ref={ref} {...props} />
     );
 });
 

@@ -35,6 +35,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({ course }) => {
       }
     }
     delete result.policies;
+    console.log(result);
     return result;
   }
 
@@ -62,7 +63,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({ course }) => {
           <CourseAspectCard field={field} courseAspect={course[field]} />
         </div>
       ))}
-      {course.policies&&(
+      {course.policies&&course.policies.length ? (
         <div
           className={twMerge(`select-none flex flex-col items-start justify-start
           p-8 rounded-xl shadow-lg gap-y-4 h-fit w-full`)}>
@@ -71,7 +72,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({ course }) => {
           </h2>
           <CourseAspectCard field={"policies"} courseAspect={course["policies"]} />
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

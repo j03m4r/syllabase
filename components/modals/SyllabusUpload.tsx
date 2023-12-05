@@ -102,8 +102,7 @@ const SyllabusUpload = () => {
             value={specifier || ""}
             placeholder="e.g. CSCI 2041"
             disabled={isLoading}
-            className="w-full
-                    rounded-md border border-red p-4 focus:outline-none placeholder:text-grey resize-none bg-offWhite"
+            className="w-full rounded-md border border-red p-4 focus:outline-none placeholder:text-grey resize-none bg-offWhite"
           />
           <InputLabel htmlFor="syllabusText">
             Syllabus Text

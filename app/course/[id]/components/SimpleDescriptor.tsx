@@ -21,6 +21,7 @@ const SimpleDescriptor: React.FC<SimpleDescriptorProps> = ({ elements, field }) 
       );
     case "course_materials":
     case "policies":
+      if (elements.length===0) return null;
       return (
         <ol className="flex flex-col gap-y-2 list-disc">
           {elements.map((policy, i) => (
@@ -43,7 +44,7 @@ const SimpleDescriptor: React.FC<SimpleDescriptorProps> = ({ elements, field }) 
         </div>
       );
     default:
-      return ( 
+      return (
         <MainText className="text-charcoal">{elements}</MainText>
       );
   };

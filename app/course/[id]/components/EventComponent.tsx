@@ -53,8 +53,8 @@ const EventComponent: React.FC<EventComponentProps> = ({
     return (
         <div className="flex-col gap-y-2 list-item">
             {/* @ts-ignore */}
-            <MainText>{event[1]}</MainText>
-            <MainText className="text-charcoal">
+            <MainText className="capitalize">{event[1]}</MainText>
+            <MainText className="text-charcoal capitalize">
                 {/* @ts-ignore */}
                {event[0]}
             </MainText>

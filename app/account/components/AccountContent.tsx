@@ -24,13 +24,20 @@ const AccountContent: React.FC<AccountContentProps> = ({ courses }) => {
         <div className="flex flex-col lg:grid grid-cols-1 sm:grid-cols-3 w-full h-full">
             <Container className='lg:col-span-1 xl:py-16 md:py-8 sm:py-2 py-4 flex flex-col justify-start gap-y-4'>
                 <Avatar src={avatar_url} />
-                <MainHeader>{profile?.username}</MainHeader>
+                <MainHeader className="text-lavender">{profile?.username}</MainHeader>
                 <ButtonContainer>
                     <PrimaryButton onClick={updateProfileModal.onOpen}>UPDATE PROFILE</PrimaryButton>
                 </ButtonContainer>
             </Container>
             <div className="lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-2">
-                <MainHeader className="col-span-full py-8">COURSES</MainHeader>
+                <div className="col-span-2">
+                    <div className="w-fit p-8 flex flex-row select-none border border-red rounded-md">
+                        {"COURSES".split("").map((char) => (
+                            <MainHeader className="hover:text-lavender hover:italic cursor-default">{char}</MainHeader>
+                        ))}
+                        {/* <MainHeader className="rounded-md py-8 px-8 border border-red w-fit hover:text-lavender">COURSES</MainHeader> */}
+                    </div>
+                </div>
                 {courses.map((course) => (
                     <CourseCard key={course.id} course={course} />
                 ))}
