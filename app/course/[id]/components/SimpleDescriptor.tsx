@@ -1,6 +1,5 @@
 
 import MainText from "@/components/typography/MainText";
-import SecondaryHeader from "@/components/typography/SecondaryHeader";
 import { Employee } from "@/types";
 import { CiUser } from "react-icons/ci";
 
@@ -20,21 +19,32 @@ const SimpleDescriptor: React.FC<SimpleDescriptorProps> = ({ elements, field }) 
           <MainText className="text-xl text-charcoal">{instructor.name}</MainText>
         </div>
       );
+    case "course_materials":
     case "policies":
       return (
-        <ol className="flex flex-col gap-y-2">
+        <ol className="flex flex-col gap-y-2 list-disc">
           {elements.map((policy, i) => (
-            <li key={i}>
+            <li key={i} className="list-item">
               <MainText className="text-charcoal">{policy}</MainText>
             </li>
           ))}
         </ol>
       );
-    default:
+    case "attendance":
       return (
-        <ul className="flex flex-col gap-y-2"> 
-            <li className="">{JSON.stringify(elements)}</li>
-        </ul>
+        <div className="flex flex-col gap-y-2 justify-center items-start">
+          {Object.keys(elements).slice(1, Object.keys(elements).length).map((key, i) => (
+            <div key={i} className="flex flex-row gap-x-2">
+              <MainText className="capitalize text-charcoal font-semibold">{key.replaceAll("_", " ")}</MainText>
+              {/* @ts-ignore */}
+              <MainText className="text-charcoal">{elements[key]}</MainText>
+            </div>
+          ))}
+        </div>
+      );
+    default:
+      return ( 
+        <MainText className="text-charcoal">{elements}</MainText>
       );
   };
 };

@@ -55,14 +55,14 @@ const PieChart: React.FC<PieChartProps> = ({
                 },
                 anchor: 'center',
                 align: 'end',
-                offset: 40
+                offset: 10
             },
         }
     }
 
     return (
         // @ts-ignore
-        <Pie data={data} options={options} plugins={[ChartDataLabels]}/>
+        <Pie data={data} options={options} width={400} height={400} plugins={[ChartDataLabels]}/>
     );
 }
 

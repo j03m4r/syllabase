@@ -58,11 +58,11 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <div className="self-end flex flex-row gap-x-2">
                 <ButtonContainer>
                     <PrimaryButton disabled={isLoading||course.status==="processing"} onClick={course.status==="processing" ? () => {} : () => router.push(`/course/${course.id}`)}>
-                        VIEW COURSE
+                        EDIT COURSE
                     </PrimaryButton>
                 </ButtonContainer>
                 <ButtonContainer>
-                    <PrimaryButton disabled={isLoading||course.status==="processing"} onClick={deleteCourse} className="text-red">
+                    <PrimaryButton disabled={isLoading||course.status==="processing"} onClick={() => {if (confirm("Delete course?")) deleteCourse()}} className="text-red">
                         <RxCross1 size={28} />
                     </PrimaryButton>
                 </ButtonContainer>

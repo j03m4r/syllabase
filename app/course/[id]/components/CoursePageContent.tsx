@@ -6,6 +6,7 @@ import ButtonContainer from "@/components/general/ButtonContainer";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
+import { twMerge } from "tailwind-merge";
 
 interface CoursePageContentProps {
   course: Course;
@@ -33,6 +34,7 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({ course }) => {
         result[key] = obj[key];
       }
     }
+    delete result.policies;
     return result;
   }
 
@@ -50,14 +52,26 @@ const CoursePageContent: React.FC<CoursePageContentProps> = ({ course }) => {
       {Object.keys(filteredCourse).map((field, i) => (
         <div
           key={i}
-          className="select-none flex flex-col items-start justify-between w-fit 
-          p-8 rounded-xl shadow-lg gap-y-4 max-w-full md:max-w-[40%] min-w-[260px]">
-          <h2 key={i} className="text-3xl font-semibold capitalize">
+          className={twMerge(`select-none flex flex-col items-start justify-center w-fit
+          p-8 rounded-md shadow-lg gap-y-4 max-w-full md:max-w-[40%] max-h-[75vh]`, field!="grade_cutoffs"&&'',
+          field==='policies'&&'w-full md:max-w-[full]', field==="grade_categories"&&'md:max-w-fit')}>
+          <h2 className="text-3xl font-semibold capitalize">
             {field.replaceAll("_", " ")}
           </h2>
-          <CourseAspectCard key={i} field={field} courseAspect={course[field]} />
+          {/* @ts-ignore */}
+          <CourseAspectCard field={field} courseAspect={course[field]} />
         </div>
       ))}
+      {course.policies&&(
+        <div
+          className={twMerge(`select-none flex flex-col items-start justify-start
+          p-8 rounded-xl shadow-lg gap-y-4 h-fit w-full`)}>
+          <h2 className="text-3xl font-semibold capitalize">
+            {"policies".replaceAll("_", " ")}
+          </h2>
+          <CourseAspectCard field={"policies"} courseAspect={course["policies"]} />
+        </div>
+      )}
     </div>
   );
 };

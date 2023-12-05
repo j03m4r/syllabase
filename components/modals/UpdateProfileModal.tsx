@@ -12,6 +12,9 @@ import uniqid from 'uniqid';
 import Input from "../inputs/Input";
 import Button from "../buttons/Button";
 import { CgProfile } from 'react-icons/cg';
+import InputLabel from "../typography/InputLabel";
+import ButtonContainer from "../general/ButtonContainer";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 const UpdateProfileModal = () => {
     const { isOpen, onClose } = useUpdateProfileModal();
@@ -111,23 +114,23 @@ const UpdateProfileModal = () => {
         isOpen={isOpen}>
             <div className="flex flex-col w-full h-full justify-center items-center gap-y-5">
                 <div className="flex flex-col gap-y-1 items-start justify-center w-full">
-                    <div className="text-lg">Edit username</div>
+                    <InputLabel htmlFor="username">Edit username (optional)</InputLabel>
                     <Input id="username" {...register('username', { required: false })} value={username || ""} 
-                    placeholder="Enter a new username" disabled={isLoading} />
+                    placeholder="Enter a new username" disabled={isLoading} className="w-full
+                    rounded-md border border-red p-4 focus:outline-none placeholder:text-grey resize-none bg-offWhite" />
                 </div>
                 <div className="flex flex-col gap-y-1 items-start justify-center w-full">
-                    <div className="text-lg text-forestGreen">Edit profile picture (optional)</div>
-                    <div className="w-full relative flex flex-col border border-black hover:bg-black justify-center items-center
-                    cursor-pointer duration-300 hover:rounded-se-xl hover:rounded-bl-xl py-5 md:py-20 hover:text-white">
+                    <InputLabel htmlFor="image">Edit profile picture (optional)</InputLabel>
+                    <div className="w-full relative flex flex-col border border-red hover:bg-red justify-center items-center
+                    cursor-pointer duration-300 rounded-md py-5 md:py-20 hover:text-lavender text-red">
                         <CgProfile size={30} />
-                        <Input type="file" accept="image/*" className="cursor-pointer opacity-0 absolute inset-0" 
+                        <Input id="image" type="file" accept="image/*" className="cursor-pointer opacity-0 absolute inset-0" 
                         {...register('image', { required: false })}/>
                     </div>
                 </div>
-                <Button className="w-full text-xl px-8 py-4 border-primary border border-black bg-black hover:bg-white hover:text-black
-                hover:rounded-se-xl hover:rounded-bl-xl text-white duration-300" onClick={handleSubmit(onSubmit)}>
-                    Update Profile
-                </Button>
+                <ButtonContainer>
+                    <PrimaryButton onClick={handleSubmit(onSubmit)}>Update Profile</PrimaryButton>
+                </ButtonContainer>
             </div>
         </Modal>
     );

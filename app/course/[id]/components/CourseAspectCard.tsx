@@ -18,16 +18,17 @@ const CourseAspectCard: React.FC<CourseAspectCardProps> = ({
     case "grade_categories":
       return <PieChart gradeCategories={courseAspect} />;
     case "important_dates":
+      let events: Event[] = courseAspect;
       return (
-        <div className="flex flex-col gap-y-4">
-          {courseAspect.map((aspect: Event) => (
-            <EventComponent key={aspect.id} event={aspect} />
+        <ul className="flex flex-col gap-y-2 list-disc">
+          {events.map((aspect, i) => (
+            <EventComponent key={i} event={aspect} />
           ))}
-        </div>
+        </ul>
       );
     default:
       return (
-        <div className="flex flex-row justify-center items-center gap-y-4 gap-x-8 ">
+        <div className="flex flex-row gap-y-4 gap-x-8">
           <SimpleDescriptor elements={courseAspect} field={field} />
         </div>
       );

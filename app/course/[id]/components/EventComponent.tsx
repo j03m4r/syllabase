@@ -1,5 +1,6 @@
 "use client";
 
+import MainText from "@/components/typography/MainText";
 import { Event } from "@/types";
 import { useEffect, useState } from "react";
 
@@ -50,11 +51,13 @@ const EventComponent: React.FC<EventComponentProps> = ({
     // }, []);
 
     return (
-        <div className="flex flex-col gap-y-2">
-            <div className="text-xl font-semibold">{event[1]}</div>
-            <div className="text-sm text-light">
+        <div className="flex-col gap-y-2 list-item">
+            {/* @ts-ignore */}
+            <MainText>{event[1]}</MainText>
+            <MainText className="text-charcoal">
+                {/* @ts-ignore */}
                {event[0]}
-            </div>
+            </MainText>
         </div>
     );
 }
