@@ -47,7 +47,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <Link href={course.status==="processing" ? {} : `/course/${course.id}`} className={twMerge(`flex flex-col justify-between 
             items-center w-full aspect-square border border-red hover:bg-red p-12 rounded-md
             group transition-colors duration-300 ease-in-out cursor-pointer`, (isLoading||course.status==="processing")&&'opacity-40 hover:bg-none')}>
-                <SecondaryHeader className={twMerge(`text-red group-hover:text-lavender duration-300 transition-colors ease-in-out`, (isLoading||course.status==="processing")&&'group-hover:text-red')}>
+                <SecondaryHeader className={twMerge(`text-red group-hover:text-lavender duration-300 transition-colors ease-in-out uppercase`, (isLoading||course.status==="processing")&&'group-hover:text-red')}>
                     {course.specifier}
                 </SecondaryHeader>
                 <div className="flex flex-row justify-between items-center w-full">

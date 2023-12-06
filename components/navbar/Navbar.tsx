@@ -13,7 +13,7 @@ const Navbar = () => {
     const supabase = useSupabaseClient();
     if (pathname === "/") return null;
     return (
-        <div className="fixed w-full z-10 min-h-[100px]">
+        <div className="fixed w-full z-10 min-h-[100px] bg-[#FAF9F6] z-50">
             <Container>
                 <div className="flex flex-row items-center justify-between py-4">
                     <div className="flex flex-row gap-x-3 items-center">

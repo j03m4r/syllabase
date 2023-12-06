@@ -36,7 +36,7 @@ const SimpleDescriptor: React.FC<SimpleDescriptorProps> = ({ elements, field }) 
         <div className="flex flex-col gap-y-2 justify-center items-start">
           {Object.keys(elements).slice(1, Object.keys(elements).length).map((key, i) => (
             <div key={i} className="flex flex-row gap-x-2">
-              <MainText className="capitalize text-charcoal font-semibold">{key.replaceAll("_", " ")}</MainText>
+              <MainText className="capitalize text-charcoal font-medium">{key.replaceAll("_", " ")}:</MainText>
               {/* @ts-ignore */}
               <MainText className="text-charcoal">{elements[key]}</MainText>
             </div>
