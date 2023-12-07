@@ -13,6 +13,7 @@ import { pushRawSyllabus } from "@/actions/messageQueue";
 import PrimaryButton from "../buttons/PrimaryButton";
 import ButtonContainer from "../general/ButtonContainer";
 import InputLabel from "../typography/InputLabel";
+import { parsePDF } from "@/actions/parsePDF";
 
 const SyllabusUpload = () => {
   const { onClose, isOpen } = useSyllabusUploadModal();
@@ -20,7 +21,7 @@ const SyllabusUpload = () => {
   const router = useRouter();
   const supabaseClient = useSupabaseClient();
   const { profile } = useUser();
-  let [isPending, startTransition] = useTransition()
+  let [isPending, startTransition] = useTransition();
 
   const onChange = (open: boolean) => {
     if (!open) {
@@ -31,7 +32,7 @@ const SyllabusUpload = () => {
   const { register, handleSubmit, reset, watch } = useForm<FieldValues>({
     defaultValues: {
       syllabusText: "",
-      specifier: ""
+      specifier: "",
     },
   });
 
@@ -65,8 +66,7 @@ const SyllabusUpload = () => {
         try {
           startTransition(() => {
             pushRawSyllabus(data[0].id);
-          }
-          )
+          });
         } catch (error) {
           toast.error("Something went wrong");
         }
@@ -83,6 +83,27 @@ const SyllabusUpload = () => {
       setIsLoading(false);
     }
   };
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = async (e) => {
+        // Create a blob from the result
+        // const blob = new Blob([e.target.result], { type: file.type });
+
+        // Call the passed parsing function with the blob
+
+        const response = await fetch("/api/pdf", {
+          method: "POST",
+          body: e.target.result,
+        }).then(console.log);
+      };
+
+      // Read the file as an ArrayBuffer and then convert it to a Blob
+      reader.readAsArrayBuffer(file);
+    }
+  };
 
   return (
     <Modal
@@ -93,9 +114,12 @@ const SyllabusUpload = () => {
     >
       <div className="flex flex-col items-center justify-between w-full h-full md:h-[70vh] gap-y-5">
         <div className="relative flex flex-col items-start justify-center w-full h-full gap-y-2">
-          <InputLabel htmlFor="specifier">
-            Course Specifier
-          </InputLabel>
+          <InputLabel htmlFor="specifier">Course Specifier</InputLabel>
+          <input
+            type="file"
+            onChange={handleFileChange}
+            accept=".pdf, .doc, .docx"
+          />
           <input
             id="specifier"
             {...register("specifier", { required: false })}
@@ -104,9 +128,7 @@ const SyllabusUpload = () => {
             disabled={isLoading}
             className="w-full rounded-md border border-red p-4 focus:outline-none placeholder:text-grey resize-none bg-offWhite"
           />
-          <InputLabel htmlFor="syllabusText">
-            Syllabus Text
-          </InputLabel>
+          <InputLabel htmlFor="syllabusText">Syllabus Text</InputLabel>
           <textarea
             id="syllabusText"
             {...register("syllabusText", { required: false })}
