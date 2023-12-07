@@ -13,7 +13,7 @@ import { pushRawSyllabus } from "@/actions/messageQueue";
 import PrimaryButton from "../buttons/PrimaryButton";
 import ButtonContainer from "../general/ButtonContainer";
 import InputLabel from "../typography/InputLabel";
-import { parsePDF } from "@/actions/parsePDF";
+
 
 const SyllabusUpload = () => {
   const { onClose, isOpen } = useSyllabusUploadModal();
@@ -83,27 +83,27 @@ const SyllabusUpload = () => {
       setIsLoading(false);
     }
   };
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
+  // const handleFileChange = (event) => {
+  //   const file = event.target.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
 
-      reader.onload = async (e) => {
-        // Create a blob from the result
-        // const blob = new Blob([e.target.result], { type: file.type });
+  //     reader.onload = async (e) => {
+  //       // Create a blob from the result
+  //       const blob = new Blob([e.target.result], { type: file.type });
 
-        // Call the passed parsing function with the blob
+  //       // Call the passed parsing function with the blob
 
-        const response = await fetch("/api/pdf", {
-          method: "POST",
-          body: e.target.result,
-        }).then(console.log);
-      };
+  //       const response = await fetch("/api", {
+  //         method: "POST",
+  //         body: blob,
+  //       }).then(console.log);
+  //     };
 
-      // Read the file as an ArrayBuffer and then convert it to a Blob
-      reader.readAsArrayBuffer(file);
-    }
-  };
+  //     // Read the file as an ArrayBuffer and then convert it to a Blob
+  //     reader.readAsArrayBuffer(file);
+  //   }
+  // };
 
   return (
     <Modal
@@ -115,11 +115,11 @@ const SyllabusUpload = () => {
       <div className="flex flex-col items-center justify-between w-full h-full md:h-[70vh] gap-y-5">
         <div className="relative flex flex-col items-start justify-center w-full h-full gap-y-2">
           <InputLabel htmlFor="specifier">Course Specifier</InputLabel>
-          <input
+          {/* <input
             type="file"
             onChange={handleFileChange}
             accept=".pdf, .doc, .docx"
-          />
+          /> */}
           <input
             id="specifier"
             {...register("specifier", { required: false })}
