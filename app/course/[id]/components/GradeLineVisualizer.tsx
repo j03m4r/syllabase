@@ -20,17 +20,17 @@ const GradeLineVisualizer: React.FC<GradeLineVisualizerProps> = ({
         <div className="flex justify-center items-center min-h-[60vh] h-full w-full">
             <div className="flex flex-col w-1/5 h-full justify-center items-center gap-y-2">
                 {gradeLines.map((gradeLine, index) => (
-                    <div key={index} style={{ height: `${gradeLine[1]-gradeLine[2]}%` }} 
+                    <div key={index} style={{ height: `${gradeLine[1] > gradeLine[2] ? gradeLine[1]-gradeLine[2] : gradeLine[2] - gradeLine[1]}%` }} 
                     className={`w-full ${gradeLineShades[index]} hover:scale-105 transition duration-300 ease-in-out rounded-md
                     relative flex items-center group text-sm font-extralight`}>
                         <div className="absolute -left-10">{gradeLine[0]}</div>
                         <div className="absolute flex flex-col gap-y-2 -right-16 w-[50px] group-hover:opacity-100 opacity-0 transition duration-300 
                         ease-in-out">
                             <div>
-                                {gradeLine[1]}%
+                                {gradeLine[1] > gradeLine[2] ? gradeLine[1] : gradeLine[2]}%
                             </div>
                             <div>
-                                {gradeLine[2]}%
+                                {gradeLine[2] < gradeLine[1] ? gradeLine[2] : gradeLine[1]}%
                             </div>
                         </div>
                     </div>
